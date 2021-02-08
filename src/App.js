@@ -1,13 +1,18 @@
 import React from "react";
-
 import Cabecalho from "./Components/Cabecalho";
 import Container from "./Components/Container";
+
+import { ThemeProvider } from "styled-components";
+import GlobalStyle, { theme } from "./Components/GlobalStyle";
 
 function App() {
   return (
     <>
-      <Cabecalho />
-      <Container />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Cabecalho />
+        <Container />
+      </ThemeProvider>
     </>
   );
 }

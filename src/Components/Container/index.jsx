@@ -1,16 +1,18 @@
 import React from "react";
 
-import Titulo from "../Titulo";
 import Conta from "../Conta";
+import Extrato from "../Extrato";
+import { Conteudo, Titulo, Wrapper } from "./styles";
 
 const Container = () => {
   return (
-    <div className="container">
+    <Wrapper>
       <Titulo>Olá Fulano!</Titulo>
-      <section className="conteudo">
+      <Conteudo >
         <Conta />
-      </section>
-    </div>
+        <Extrato />
+      </Conteudo>
+    </Wrapper>
   );
 };
 
