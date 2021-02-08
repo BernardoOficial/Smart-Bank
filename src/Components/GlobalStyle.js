@@ -7,15 +7,27 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       text-decoration: none;
-      color: grey;
   }
 `;
 
-export const theme = {
-  colors: {
+export const themeClaro = {
+  cores: {
     primary: "#41d3be",
-    secondary: "#f1f1f1",
-    gray: "#41d3be",
+    fundo: "#f1f1f1",
+    conteudo: "white",
+    text: "#41d3be",
+    filter: ''
+  },
+  borderRadius: "6px",
+};
+
+export const themeEscuro = {
+  cores: {
+    primary: "#41d3be",
+    fundo: "#363537",
+    conteudo: "#5c5b5e",
+    text: "#fafafa",
+    filter: 'invert(100%)'
   },
   borderRadius: "6px",
 };

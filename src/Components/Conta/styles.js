@@ -7,7 +7,7 @@ const Saldo = styled.div`
 `;
 
 const Detalhe = styled.span`
-  color: #41d3be;
+  color: ${({theme}) => theme.cores.primary};
   font-size: 24px;
 `;
 

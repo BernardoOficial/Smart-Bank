@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Header = styled.header`
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.cores.primary};
   display: flex;
   justify-content: space-between;
   padding: 0 15vw;
@@ -20,10 +20,10 @@ const BtnHeader = styled.a`
   padding: 5px 20px;
   margin: 0 10px;
   font-weight: 600;
-  border: 2px solid white;
+  border: 2px solid ${({theme}) => theme.cores.conteudo};
 
-  background-color: ${(props) => props.primary ? 'white' : props.theme.colors.primary};
-  color: ${(props) => props.primary ? props.theme.colors.primary : 'white'};
+  background-color: ${(props) => props.primary ? props.theme.cores.conteudo : props.theme.cores.primary};
+  color: ${(props) => props.primary ? props.theme.cores.primary : props.theme.cores.conteudo};
 `;
 
 export {
