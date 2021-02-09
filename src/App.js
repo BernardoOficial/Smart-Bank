@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Cabecalho from "./Components/Cabecalho";
+import React, { useState } from "react";
+import Header from "./Components/Header";
 import Container from "./Components/Container";
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyle, { themeClaro, themeEscuro } from "./Components/GlobalStyle";
 import { Icone, BtnTheme } from "./Components/ComponentesGerais";
 import ThemeOn from './assets/images/themeOn.svg';
+import ThemeOff from './assets/images/themeOff.svg';
 
 function App() {
 
@@ -17,10 +18,10 @@ function App() {
     <>
       <ThemeProvider theme={theme ? themeEscuro : themeClaro}>
         <GlobalStyle />
-        <Cabecalho />
+        <Header />
         <Container />
         <BtnTheme onClick={handleClick}>
-          <Icone src={ThemeOn} alt="Tema On" />
+          <Icone src={theme ? ThemeOff : ThemeOn} alt="Tema On / Tema Off" />
         </BtnTheme>
       </ThemeProvider>
     </>

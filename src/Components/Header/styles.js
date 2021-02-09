@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Header = styled.header`
+const Container = styled.header`
   background-color: ${(props) => props.theme.cores.primary};
   display: flex;
   justify-content: space-between;
@@ -26,8 +26,4 @@ const BtnHeader = styled.a`
   color: ${(props) => props.primary ? props.theme.cores.primary : props.theme.cores.conteudo};
 `;
 
-export {
-    Header,
-    Logo,
-    BtnHeader
-}
+export { Container, Logo, BtnHeader };

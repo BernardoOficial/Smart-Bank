@@ -1,10 +1,10 @@
 import React from "react";
 import bank_logo from "../../assets/images/bank_logo.svg";
-import { Header, Logo, BtnHeader } from "./styles";
+import { Container, Logo, BtnHeader } from "./styles";
 
-const Cabecalho = () => {
+const Header = () => {
   return (
-    <Header>
+    <Container>
       <Logo src={bank_logo} alt="Logo Smart Bank" />
       <div>
         <BtnHeader primary href="https://google.com">
@@ -12,8 +12,8 @@ const Cabecalho = () => {
         </BtnHeader>
         <BtnHeader href="https://google.com">Sair</BtnHeader>
       </div>
-    </Header>
+    </Container>
   );
 };
 
-export default Cabecalho;
+export default Header;

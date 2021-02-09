@@ -32,6 +32,11 @@ const Botao = styled.button`
 const Icone = styled.img`
   height: 25px;
   width: 25px;
+`;
+
+const IconeTheme = styled.img`
+  height: 25px;
+  width: 25px;
   filter: ${({theme}) => theme.cores.filter};
 `;
 
@@ -44,9 +49,4 @@ const BtnTheme = styled.button`
   cursor: pointer;
 `;
 
-export {
-    Box,
-    Botao,
-    Icone,
-    BtnTheme
-}
+export { Box, Botao, Icone, BtnTheme, IconeTheme };
